@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="javas.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
+
+    <title>Er encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img src="alura 1.png" alt="Logo letra inicial alura">
+    </header>
+
+    <main>
+        <section class="seccion1">
+            <div id="usuario">
+                <input type="text" id="cifrado" placeholder="Escribe tu texto aquí">
+            </div>
+            <div id="botones">
+                <button type="button" id="botonEncriptado" class="encriptar">Encriptar</button>
+                <button type="button" id="botonDesencriptado" class="desencriptar">Desencriptar</button>
+                <button type="button" id="botonCopiar" class="copiar">Copiar</button>
+            </div>
+        </section>
+        <section class="seccion2">
+            <div class="contenedorImg">
+                <img src="alura2.png" alt="una persona viendo el mensaje encriptado">
+            </div>
+            <div id="respuesta">
+                <textarea class="textarea" name="resultado" id="desifrado" cols="30" rows="10"></textarea>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desEncriptar;
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+
+</html>
